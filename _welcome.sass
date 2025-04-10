@@ -1,0 +1,90 @@
+#welcome
+    .box
+        width: 580px
+        text-align: center
+        padding: 20px 50px
+        h1
+            font-size: 55px
+            font-weight: 700
+            color: #243a2d
+            span
+                font-size: 45px
+                color: #44a737
+        h3
+            font-size: 20px
+            color: #889e91
+
+        .textbox
+            height: 300px
+            width: 200px
+            padding: 20px 0
+            margin: 10px
+            background-color: #c2dfd4
+            border-radius: 20px
+            h2
+                font-weight: 700
+                font-size: 28px
+                color: #243a24
+            h4
+                margin: 10px 0
+                font-size: 18px
+                color: #889e91
+                line-height: 1.4
+        .imgbox
+            img
+                height: 230px
+                width: 200px
+                border-radius: 100%
+                transition: 1s
+                &:hover
+                    border-radius: 10%
+    .btn
+        font-size: 20px
+        border: 1px solid #c2dfd4
+        height: 50px
+        background-color: #44a737
+        border-radius: 20px
+        justify-content: center
+        align-content: center
+        color: #243a24
+        transition: 1s
+        &:hover
+            background-color: #7da79a
+            color: #1e6914
+            font-size: 22px
+            height: 60px
+
+    @media screen and ( max-width: 1184px )
+        .box
+            h1
+                font-size: 35px
+            h3
+                font-size: 16px
+            .textbox
+                height: 200px
+                width: 170px
+                h2
+                    font-size: 20px
+                h4
+                    font-size: 12px
+            .imgbox
+                img
+                    height: 130px
+                    width: 120px
+                    border-radius: 100%
+                    transition: 1s
+                    &:hover
+                        border-radius: 10%
+                        height: 200px
+                        width: 220px
+        .btn
+            font-size: 17px
+            order: 1px solid #a2f0d2
+            height: 45px
+            background-color: #5ed197
+            border-radius: 40px
+            &:hover
+                background-color: #09a372
+                color: #b0f0a8
+                font-size: 20px
+                height: 55px
