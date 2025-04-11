@@ -1,34 +1,43 @@
 header
-    padding: 0 0 20px
-    background-color: #c2dfd4
-    nav
-        a
-            font-size: 20px
-            margin-right: 30px
-            color: #0d291a
-            &:hover
-                color: #44a737
-    .iconcup
-        i
-            font-size: 40px
-            color: #24332a
-    .iconbar
-        display: none
-    .barbox
-        ul
-            display: none
-@media screen and ( max-width: 540px )
-    .panel
-        nav 
-            display: none
-        .iconcup
-            i
-                font-size: 28px
-        .iconbar
-            display: block
-            i
-                font-size: 25px
-                color: #0d291a
-                transition: 5s
+    padding: 20px 0
+    .menu
+        .imgbox
+            img
+                height: 40px
+        nav
+            position: relative
+            a
+                font-size: 20px
+                color: #8c8999
+                margin-right: 30px
                 &:hover
+                    color: #74bebc
+                    cursor: pointer
+        .iconbox
+            background-color: #eaeef1
+            border: 1px solid #eaeef1
+            border-radius: 5px
+            padding: 15px
+            margin-right: 10px
+            i
+                font-size: 20px
+                color: #37383a
+                &:hover
+                    color: #74bebc
+                    cursor: pointer
+    .container
+        max-width: 1000px
+        .iconbox, i
+            position: absolute
+            display: none
+    @media screen and (max-width: 992px)
+        .menu
+            nav
+                position: absolute
+                a
                     display: none
+            .iconbox, i
+                position: static
+                display: block
+    @media screen and (max-width: 690px)
+
