@@ -17,7 +17,8 @@
             background-color: #38b6c1
             padding: 13px 34px
     .imgbox
-        width: auto
+        img
+            width: auto
 
     @media screen and (max-width: 991px)
         .container
@@ -26,6 +27,20 @@
                 display: flex
                 flex-direction: column
                 .col-md-6
+                    width: 100%
+                    justify-content: center
+                    text-align: center
+                    .textbox
+                        text-align:  center
+                        width: 500px
+                        h5 
+                            margin-right: 0
+                    .imgbox
+                        margin: 80px 40px
+    @media screen and (max-width: 766px)
+        .imgbox
+            img 
+                width: 100%
 
 
 
